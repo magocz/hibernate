@@ -21,7 +21,7 @@ public class BookEntity implements Serializable {
     )
     private Set<AuthorEntity> authors = new HashSet<>();   
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private LibraryEntity library;   
     
 
